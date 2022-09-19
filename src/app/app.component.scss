@@ -1,0 +1,19 @@
+html {
+    height: 100%;
+    display: grid;
+    grid-template-rows: 5em auto 5em;
+
+    
+
+    app- {
+
+        &header, &footer{
+            height: 5em;
+            background-color: blue;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+    }
+}
+
