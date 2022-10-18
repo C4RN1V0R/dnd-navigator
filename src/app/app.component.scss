@@ -2,18 +2,32 @@ html {
     height: 100%;
     display: grid;
     grid-template-rows: 5em auto 5em;
+    grid-template-columns: 10% 80% 10%;
+    grid-template-areas: 
+        "home nav user"
+        "content-left content content-right"
+        "footer footer footer"
+    ;  
+}
 
-    
+.header, .footer {
+    height: 5em;
+    background-color: blue;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
 
-    app- {
 
-        &header, &footer{
-            height: 5em;
-            background-color: blue;
-            justify-content: center;
-            align-items: center;
-            display: flex;
-        }
-    }
+app- {
+    &home {grid-area: home;}
+    &header {grid-area: nav;}
+    &user-menu {grid-area: user;}
+    &footer {grid-area: footer;}
+}
+
+.content {
+    grid-area: content;
+
 }
 

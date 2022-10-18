@@ -8,6 +8,8 @@ import { OverviewComponent } from './components/overview/overview.component';
 import { HeaderComponent } from './layout/header/header.component';
 import { FooterComponent } from './layout/footer/footer.component';
 import { LoginPageComponent } from './components/login-page/login-page.component';
+import { HomeComponent } from './layout/home/home.component';
+import { UserMenuComponent } from './layout/user-menu/user-menu.component';
 
 const appRoutes: Routes = [
   { path: 'overview', component: OverviewComponent },
@@ -28,7 +30,9 @@ const appRoutes: Routes = [
     OverviewComponent,
     HeaderComponent,
     FooterComponent,
-    LoginPageComponent
+    LoginPageComponent,
+    HomeComponent,
+    UserMenuComponent
   ],
   bootstrap: [ AppComponent ]
 })
