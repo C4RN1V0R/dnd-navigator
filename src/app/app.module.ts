@@ -4,12 +4,14 @@ import { FormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
-import { OverviewComponent } from './overview/overview.component';
-import { HeaderComponent } from './header/header.component';
-import { FooterComponent } from './footer/footer.component';
+import { OverviewComponent } from './components/overview/overview.component';
+import { HeaderComponent } from './layout/header/header.component';
+import { FooterComponent } from './layout/footer/footer.component';
+import { LoginPageComponent } from './components/login-page/login-page.component';
 
 const appRoutes: Routes = [
   { path: 'overview', component: OverviewComponent },
+  { path: 'login', component: LoginPageComponent }
 ];
 
 @NgModule({
@@ -25,7 +27,8 @@ const appRoutes: Routes = [
     AppComponent,
     OverviewComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    LoginPageComponent
   ],
   bootstrap: [ AppComponent ]
 })
