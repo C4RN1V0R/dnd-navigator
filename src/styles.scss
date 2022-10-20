@@ -1,4 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
+@import "colors.scss";
 
 html {
     height: 100%;
@@ -10,7 +11,7 @@ html {
 
 form {
     padding: 1rem;
-    border: 2px solid gray;
+    border: 2px solid var(--color-highlight-gray);
     border-radius: .5rem;
     .form-group {
         margin: 1rem;

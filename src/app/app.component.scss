@@ -12,18 +12,21 @@ html {
 
 .header, .footer {
     height: 5em;
-    background-color: blue;
-    justify-content: center;
-    align-items: center;
+    background-color: var(--color-medium);
     display: flex;
+    align-items: center;
 }
 
 
 app- {
     &home {grid-area: home;}
-    &header {grid-area: nav;}
+    &header {
+        grid-area: nav;
+    }
     &user-menu {grid-area: user;}
-    &footer {grid-area: footer;}
+    &footer {
+        grid-area: footer;
+    }
 }
 
 .content {
