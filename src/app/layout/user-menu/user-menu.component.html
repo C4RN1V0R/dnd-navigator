@@ -1,1 +1,5 @@
-<p>user-menu works!</p>
+<p *ngIf="user != undefined; else elseBlock">{{user.name}}</p>
+<ng-template #elseBlock>
+    <button>Login</button>
+</ng-template>
+

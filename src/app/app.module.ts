@@ -10,6 +10,7 @@ import { FooterComponent } from './layout/footer/footer.component';
 import { LoginPageComponent } from './components/login-page/login-page.component';
 import { HomeComponent } from './layout/home/home.component';
 import { UserMenuComponent } from './layout/user-menu/user-menu.component';
+import { HttpClientModule } from '@angular/common/http';
 
 const appRoutes: Routes = [
   { path: 'overview', component: OverviewComponent },
@@ -22,8 +23,9 @@ const appRoutes: Routes = [
     FormsModule,
     RouterModule.forRoot(
       appRoutes,
-      { enableTracing: true } // <-- debugging purposes only
-    )
+      //{ enableTracing: true } // <-- debugging purposes only
+    ),
+    HttpClientModule,
   ],
   declarations: [
     AppComponent,
