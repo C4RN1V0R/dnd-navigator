@@ -16,13 +16,8 @@ export class UserMenuComponent implements OnInit {
   user: any;
 
   ngOnInit(): void {
-    setTimeout(() => {
-      this.user = {
-        name: "TobiDestroyerrXXX"
-      }
-    }, 2000)
     this.userService.getHello().subscribe((data:any) => {
-      this.user = data; 
+      this.user = data;
     })
   }
 
